@@ -1,0 +1,35 @@
+[site]
+title = "Tianyu He"
+description = "Welcome to Tianyu He's personal website. Senior Researcher at Microsoft Research Asia working on multimodal and world models."
+favicon = "/favicon.svg"
+last_updated = "April 2026"
+
+[author]
+name = "Tianyu He"
+title = "Senior Researcher"
+institution = "Microsoft Research Asia"
+avatar = "/profile.png"
+
+[social]
+email = "deeptimhe@outlook.com"
+google_scholar = "https://scholar.google.com/citations?user=P08KU1YAAAAJ"
+orcid = ""
+github = "https://github.com/deeptimhe"
+linkedin = "https://www.linkedin.com/in/timhehome/"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
