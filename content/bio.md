@@ -1,4 +1,4 @@
-I am a Senior Researcher of a stealth mode Neo Lab. Previously, I was a Senior Researcher in the Machine Learning Group at [Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/). My work focuses on the intersection of multimodality and generative modeling, specifically aimed at advancing how AI understands and creates complex, real-world content.
+I am a Senior Researcher of a stealth Neo Lab. Previously, I was a Senior Researcher in the Machine Learning Group at [Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/). My work focuses on the intersection of multimodality and generative modeling, specifically aimed at advancing how AI understands and creates complex, real-world content.
 
 I graduated from the University of Science and Technology of China (USTC) in 2019. Prior to joining Microsoft in 2022, I spent three years at Alibaba DAMO Academy (AliStar) developing industry-leading algorithms. My research is regularly published in top-tier venues such as NeurIPS, ICLR, CVPR, ICCV, and ECCV.
 
