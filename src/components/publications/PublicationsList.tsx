@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
 import {
     MagnifyingGlassIcon,
     FunnelIcon,
@@ -232,9 +233,25 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     </p>
 
                                     {pub.description && (
-                                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
-                                            {pub.description}
-                                        </p>
+                                        <div className="text-sm text-neutral-600 dark:text-neutral-500 mb-4 line-clamp-3">
+                                            <ReactMarkdown
+                                                components={{
+                                                    p: ({ children }) => <span>{children}</span>,
+                                                    a: ({ children, href }) => (
+                                                        <a
+                                                            href={href}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="text-accent hover:underline"
+                                                        >
+                                                            {children}
+                                                        </a>
+                                                    ),
+                                                }}
+                                            >
+                                                {pub.description}
+                                            </ReactMarkdown>
+                                        </div>
                                     )}
 
                                     <div className="flex flex-wrap gap-2 mt-auto">

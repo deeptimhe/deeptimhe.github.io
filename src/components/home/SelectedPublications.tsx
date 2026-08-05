@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 import { Publication } from '@/types/publication';
 
 interface SelectedPublicationsProps {
@@ -56,9 +57,25 @@ export default function SelectedPublications({ publications, title = 'Selected P
                             {pub.journal || pub.conference} ({pub.year})
                         </p>
                         {pub.description && (
-                            <p className="text-sm text-neutral-500 dark:text-neutral-500 line-clamp-2">
-                                {pub.description}
-                            </p>
+                            <div className="text-sm text-neutral-500 dark:text-neutral-500 line-clamp-2">
+                                <ReactMarkdown
+                                    components={{
+                                        p: ({ children }) => <span>{children}</span>,
+                                        a: ({ children, href }) => (
+                                            <a
+                                                href={href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-accent hover:underline"
+                                            >
+                                                {children}
+                                            </a>
+                                        ),
+                                    }}
+                                >
+                                    {pub.description}
+                                </ReactMarkdown>
+                            </div>
                         )}
                         {(pub.url || pub.website || pub.code || pub.media) && (
                             <div className="mt-3 flex flex-wrap gap-2">

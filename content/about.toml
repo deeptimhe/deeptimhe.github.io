@@ -18,4 +18,4 @@ id = "featured_publications"
 type = "publications"
 title = "Selected Projects"
 filter = "selected"
-limit = 8
+limit = 10
