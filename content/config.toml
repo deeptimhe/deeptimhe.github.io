@@ -2,7 +2,7 @@
 title = "Tianyu He"
 description = "Welcome to Tianyu He's personal website. Senior Researcher at Microsoft Research Asia working on multimodal AI and world models."
 favicon = "/favicon.svg"
-last_updated = "August 2026"
+last_updated = "September 2026"
 
 [author]
 name = "Tianyu He"
@@ -33,3 +33,8 @@ type = "page"
 target = "publications"
 href = "/publications"
 
+[[navigation]]
+title = "Blogs"
+type = "link"
+target = "blogs"
+href = "/blogs"
