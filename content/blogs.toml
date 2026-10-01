@@ -1,0 +1,11 @@
+title = "Blogs"
+description = "Notes on ideas, observations, and discoveries along the way."
+
+[[posts]]
+slug = "embodied-ai-scaling-law"
+title = "Embodied AI: Where Is the “Law” in Scaling Law?"
+date = "September 2, 2026"
+iso_date = "2026-09-02"
+reading_time = "3 min read"
+excerpt = "Scaling becomes a law only when we specify what grows, what improves, and the conditions under which the relationship holds."
+source = "blogs/embodied-ai-scaling-law.md"
